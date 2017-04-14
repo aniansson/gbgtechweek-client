@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+
+<div *ngFor="let contact of contacts.contacts">
+<div> {{contact.name}}</div>
+<h1>{{contact.email}}</h1>
+<h1>{{contact.info}}</h1>
+<h1>{{contact.location}}</h1>
+<h1>{{contact.name}}</h1>
+<h1>{{contact.role}}</h1>
+<h1>{{contact.twitter}}</h1>
+</div>
