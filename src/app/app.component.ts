@@ -11,7 +11,7 @@ import { App } from './app';
 export class AppComponent {
   title = 'app works!';
 
-  contacts: any = {};
+  data: any = {};
   constructor(private appService: App) {
     this.getContacts();
   }
@@ -19,7 +19,7 @@ export class AppComponent {
   getContacts() {
     this.appService.getContacts().subscribe(data => {
       console.log(data);
-     this.contacts = data
+     this.data = data
     })
   }
 }
