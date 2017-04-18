@@ -1,10 +1,16 @@
-
-<div *ngFor="let contact of contacts.contacts">
-<div> {{contact.name}}</div>
-<h1>{{contact.email}}</h1>
-<h1>{{contact.info}}</h1>
-<h1>{{contact.location}}</h1>
-<h1>{{contact.name}}</h1>
-<h1>{{contact.role}}</h1>
-<h1>{{contact.twitter}}</h1>
+<div class="card">
+  <ng-container *ngFor="let contact of contacts.contacts">
+    <div class="contact-details">
+      <h2>{{contact.name}}</h2>
+      <h1>{{contact.location}}</h1>
+      <h3>{{contact.role}}</h3>
+      <h4>{{contact.company}}</h4>
+      <p>{{contact.info}}</p>
+      <h4>{{contact.email}}</h4>
+      <h4>{{contact.twitter}}</h4>
+    </div>
+  </ng-container>
 </div>
+
+
+
